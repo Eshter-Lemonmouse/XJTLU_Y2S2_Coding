@@ -5,11 +5,11 @@ using namespace std;
 
 int get_number(vector<int> *ptr)
 {
-	rewind(stdin);
 	int tag = 0;
 	if (cin >> tag)
 	{
-		rewind(stdin);
+		cin.sync();
+
 		(*ptr).push_back(tag);
 		return 0;
 	}
